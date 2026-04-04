@@ -1,14 +1,7 @@
-import React from 'react'
-
 const MovieCard = ({ movie }) => {
     return (
         <li key={movie.id} className="movie-card">
-            <img
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={`Poster do filme ${movie.title}`}
-                loading="lazy"
-                className="w-full h-auto object-cover"
-            />
+            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={`Poster do filme ${movie.title}`} />
             <div className="mt-4">
                 <h3>{movie.title}</h3>
 
