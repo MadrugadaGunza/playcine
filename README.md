@@ -6,35 +6,35 @@ Explore milhares de filmes, veja lançamentos, avaliações e descubra o que ass
 
 ## Funcionalidades
 
-Busca de filmes em tempo real
-Listagem de filmes populares e lançamentos
-Exibição de avaliações
-Interface rápida e responsiva
-UI moderna com TailwindCSS
+1. Busca de filmes em tempo real
+2. Listagem de filmes populares e lançamentos
+3. Exibição de avaliações
+4. Interface rápida e responsiva
+5. UI moderna com TailwindCSS
 
 ## Tecnologias utilizadas
 
-# Front-end
-React
-JavaScript (ES6+)
-TailwindCSS
+1. Front-end
+1.1. React
+1.2. JavaScript (ES6+)
+1.3. TailwindCSS
 
-# APIs e Backend
-TMDB (The Movie Database API)
-Appwrite (backend-as-a-service)
+2. APIs e Backend
+2.1. TMDB (The Movie Database API)
+2.2. Appwrite (backend-as-a-service)
 
 ## Instalação
 
-# Clonar o repositório
+1. Clonar o repositório
 git clone https://github.com/MadrugadaGunza/playcine.git
 
-# Entrar no diretório
+2. Entrar no diretório
 cd playcine
 
-# Instalar dependências
+3. Instalar dependências
 npm install
 
-# Rodar o projeto
+4. Rodar o projeto
 npm run dev
 
 ## Configuração
