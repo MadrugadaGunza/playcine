@@ -1,16 +1,82 @@
-# React + Vite
+# PayCine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para descoberta de filmes construída com React, JavaScript, TailwindCSS, integrada com a API do TMDB e backend com Appwrite.
 
-Currently, two official plugins are available:
+Explore milhares de filmes, veja lançamentos, avaliações e descubra o que assistir hoje com uma busca rápida e recomendações inteligentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+Busca de filmes em tempo real
+Listagem de filmes populares e lançamentos
+Exibição de avaliações
+Interface rápida e responsiva
+UI moderna com TailwindCSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+# Front-end
+React
+JavaScript (ES6+)
+TailwindCSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# APIs e Backend
+TMDB (The Movie Database API)
+Appwrite (backend-as-a-service)
+
+## Instalação
+
+# Clonar o repositório
+git clone https://github.com/MadrugadaGunza/playcine.git
+
+# Entrar no diretório
+cd playcine
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
+npm run dev
+
+## Configuração
+
+Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
+VITE_TMDB_API_KEY=your_tmdb_api_key
+VITE_APPWRITE_PROJECT_ID=your_project_id
+VITE_APPWRITE_DATABASE_ID=your_database_id
+VITE_APPWRITE_COLLECTION_ID=your_collection_id
+
+## Estrutura do Projecto
+
+src/
+ ├── assets/       # Midias
+ ├── components/   # Componentes reutilizáveis
+ ├── services/     # Integrações com APIs
+ ├── appwrite      # Configurações de integração com Appwrite
+ └── App.jsx       # Componente principal
+
+ ## SEO
+
+O projecto foi optimizado com boas práticas de SEO:
+<title>PlayCine | Buscar filmes, Ver lançamentos e Descobrir o que assistir</title>
+<meta name="description" content="Explore milhares de filmes, veja lançamentos, avaliações e descubra o que assistir hoje. Busca rápida e recomendações inteligentes no PlayCine." />
+
+## Melhorias futuras
+
+Autenticação de usuários
+Lista de favoritos
+Recomendações personalizadas
+Melhorias de responsividade
+
+## Contribuição
+
+Contribuições são bem-vindas.
+
+1. Fork o projecto
+2. Crie uma branch (git checkout -b feature/minha-feature)
+3. Commit suas mudanças (git commit -m 'feat: minha feature')
+4. Push para a branch (git push origin feature/minha-feature)
+5. Abra um Pull Request
+
+## Autor
+
+Madrugada de Carvalho
