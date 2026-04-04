@@ -1,6 +1,6 @@
 // dependency imports
 import React from "react";
-import { API_BASE_URL } from "./services/api";
+import { BASE_URL } from "./services/api";
 import { GET_MOVIES_OPTIONS } from "./services/movie";
 import { useDebounce } from "use-debounce";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
@@ -24,7 +24,7 @@ const App = () => {
     setErrorMessage('');
 
     try {
-      const endpoint = query ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}` : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`
+      const endpoint = query ? `${BASE_URL}/search/movie?query=${encodeURIComponent(query)}` : `${BASE_URL}/discover/movie?sort_by=popularity.desc`
 
       const response = await fetch(endpoint, GET_MOVIES_OPTIONS);
       if (!response.ok) throw new Error(`Erro ao buscar filmes: ${response.status}`);
