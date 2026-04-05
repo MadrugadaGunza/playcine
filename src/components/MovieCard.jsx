@@ -1,7 +1,10 @@
 const MovieCard = ({ movie }) => {
     return (
         <li key={movie.id} className="movie-card">
-            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={`Poster do filme ${movie.title}`} />
+            <img
+                src={movie ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'not-image.png'}
+                alt={`Poster do filme ${movie?.title}`}
+            />
             <div className="mt-4">
                 <h3>{movie.title}</h3>
 
@@ -16,6 +19,9 @@ const MovieCard = ({ movie }) => {
                     <span>*</span>
                     <p className="year">{movie.release_date ? movie.release_date.split('-')[0] : 'N/A'}</p>
                 </div>
+                <button className="text-md bg-amber-300 w-full mt-4 py-2 rounded-md text-amber-950 cursor-pointer hover:bg-amber-400 transition-colors">
+                    Ver detalhes
+                </button>
             </div>
         </li>
     )

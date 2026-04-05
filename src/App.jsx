@@ -36,6 +36,7 @@ const App = () => {
       }
 
       setMoviesList(data.results || []);
+
       if (query && data.results.length > 0) {
         await updateSearchCount(query, data.results[0]);
       }
@@ -87,13 +88,13 @@ const App = () => {
 
         {trendingMovies.length > 0 && (
           <section className="trending">
-            <h2>Filmes populares</h2>
+            <h2>Filmes em Alta</h2>
 
             <ul>
               {trendingMovies.map((movie, index) => (
                 <li key={movie.$id}>
                   <p>{index + 1}</p>
-                  <img src={movie.poster_url} alt={movie.title} />
+                  <img src={movie ? movie.poster_url : 'not-image.png'} alt={movie.title} />
                 </li>
               ))}
             </ul>
